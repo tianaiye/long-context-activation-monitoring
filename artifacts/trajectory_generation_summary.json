@@ -1,0 +1,217 @@
+{
+  "model_name": "meta-llama/Llama-3.2-1B-Instruct",
+  "separator": "\n\n--- NEXT INTERACTION ---\n\n",
+  "separator_token_ids": [
+    271,
+    4521,
+    46111,
+    30442,
+    42995,
+    1198,
+    10669
+  ],
+  "source_pool_counts": {
+    "calibration_low_before_filtering": 131,
+    "calibration_low_usable": 93,
+    "test_low_before_filtering": 135,
+    "test_low_usable": 111,
+    "test_high_before_filtering": 138,
+    "test_high_usable": 110
+  },
+  "settings": {
+    "lengths": [
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "min_segment_tokens": 8,
+    "max_segment_tokens": 96,
+    "min_fraction": 0.85,
+    "seed": 2026
+  },
+  "groups": {
+    "calibration_neg_L256": {
+      "n": 200,
+      "actual_length": {
+        "min": 232,
+        "mean": 245.27,
+        "max": 256
+      },
+      "n_monitored_tokens": {
+        "min": 182,
+        "mean": 204.965,
+        "max": 227
+      },
+      "n_source_segments": {
+        "min": 4,
+        "mean": 6.615,
+        "max": 9
+      }
+    },
+    "test_neg_L1024": {
+      "n": 100,
+      "actual_length": {
+        "min": 952,
+        "mean": 1001.78,
+        "max": 1024
+      },
+      "n_monitored_tokens": {
+        "min": 811,
+        "mean": 848.32,
+        "max": 882
+      },
+      "n_source_segments": {
+        "min": 19,
+        "mean": 22.78,
+        "max": 27
+      }
+    },
+    "test_neg_L2048": {
+      "n": 100,
+      "actual_length": {
+        "min": 2022,
+        "mean": 2037.72,
+        "max": 2048
+      },
+      "n_monitored_tokens": {
+        "min": 1688,
+        "mean": 1719.55,
+        "max": 1746
+      },
+      "n_source_segments": {
+        "min": 42,
+        "mean": 46.31,
+        "max": 52
+      }
+    },
+    "test_neg_L256": {
+      "n": 100,
+      "actual_length": {
+        "min": 219,
+        "mean": 240.39,
+        "max": 256
+      },
+      "n_monitored_tokens": {
+        "min": 186,
+        "mean": 207.33,
+        "max": 231
+      },
+      "n_source_segments": {
+        "min": 3,
+        "mean": 5.58,
+        "max": 8
+      }
+    },
+    "test_neg_L512": {
+      "n": 100,
+      "actual_length": {
+        "min": 447,
+        "mean": 485.65,
+        "max": 512
+      },
+      "n_monitored_tokens": {
+        "min": 369,
+        "mean": 413.25,
+        "max": 446
+      },
+      "n_source_segments": {
+        "min": 8,
+        "mean": 11.2,
+        "max": 13
+      }
+    },
+    "test_pos_L1024": {
+      "n": 100,
+      "actual_length": {
+        "min": 998,
+        "mean": 1013.52,
+        "max": 1024
+      },
+      "n_monitored_tokens": {
+        "min": 820,
+        "mean": 858.17,
+        "max": 890
+      },
+      "n_source_segments": {
+        "min": 19,
+        "mean": 23.05,
+        "max": 28
+      },
+      "positive_start_fraction": {
+        "min": 0.2561094819159335,
+        "mean": 0.46696654738793364,
+        "max": 0.6863905325443787
+      }
+    },
+    "test_pos_L2048": {
+      "n": 100,
+      "actual_length": {
+        "min": 2022,
+        "mean": 2037.23,
+        "max": 2048
+      },
+      "n_monitored_tokens": {
+        "min": 1678,
+        "mean": 1721.37,
+        "max": 1764
+      },
+      "n_source_segments": {
+        "min": 41,
+        "mean": 45.98,
+        "max": 51
+      },
+      "positive_start_fraction": {
+        "min": 0.2598925256472887,
+        "mean": 0.47966419797644944,
+        "max": 0.6897058823529412
+      }
+    },
+    "test_pos_L256": {
+      "n": 100,
+      "actual_length": {
+        "min": 231,
+        "mean": 244.11,
+        "max": 256
+      },
+      "n_monitored_tokens": {
+        "min": 182,
+        "mean": 206.36,
+        "max": 230
+      },
+      "n_source_segments": {
+        "min": 4,
+        "mean": 6.25,
+        "max": 8
+      },
+      "positive_start_fraction": {
+        "min": 0.23904382470119523,
+        "mean": 0.47160926830245126,
+        "max": 0.7863247863247863
+      }
+    },
+    "test_pos_L512": {
+      "n": 100,
+      "actual_length": {
+        "min": 487,
+        "mean": 500.82,
+        "max": 512
+      },
+      "n_monitored_tokens": {
+        "min": 395,
+        "mean": 423.1,
+        "max": 448
+      },
+      "n_source_segments": {
+        "min": 9,
+        "mean": 11.96,
+        "max": 15
+      },
+      "positive_start_fraction": {
+        "min": 0.2331288343558282,
+        "mean": 0.48751474559719243,
+        "max": 0.7383367139959433
+      }
+    }
+  }
+}

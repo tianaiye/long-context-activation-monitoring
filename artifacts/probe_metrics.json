@@ -1,0 +1,36 @@
+{
+  "configuration": {
+    "training_dataset": "Arrrlex/models-under-pressure:training/train",
+    "in_distribution_dataset": "Arrrlex/models-under-pressure:training/test",
+    "external_dataset": "Arrrlex/models-under-pressure:anthropic_hh_balanced/validation",
+    "model": "meta-llama/Llama-3.2-1B-Instruct",
+    "layer": 11,
+    "max_length": 256,
+    "n_train_per_class": 500,
+    "n_eval_per_class": 200,
+    "n_external_per_class": 200,
+    "seed": 0,
+    "english_only": true
+  },
+  "in_distribution": {
+    "n_examples": 400,
+    "accuracy_at_0.5": 0.9575,
+    "auroc": 0.9876499999999999,
+    "mean_score_high_stakes": 0.9283157587051392,
+    "mean_score_low_stakes": 0.044404249638319016
+  },
+  "shuffled_label_control": {
+    "n_examples": 400,
+    "accuracy_at_0.5": 0.51,
+    "auroc": 0.5247999999999999,
+    "mean_score_high_stakes": 0.504584550857544,
+    "mean_score_low_stakes": 0.48499375581741333
+  },
+  "external_anthropic_hh": {
+    "n_examples": 400,
+    "accuracy_at_0.5": 0.585,
+    "auroc": 0.692275,
+    "mean_score_high_stakes": 0.22394894063472748,
+    "mean_score_low_stakes": 0.07467193901538849
+  }
+}

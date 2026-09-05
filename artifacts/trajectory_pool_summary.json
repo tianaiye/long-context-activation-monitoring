@@ -1,0 +1,28 @@
+{
+  "dataset": "Arrrlex/models-under-pressure:training/test",
+  "seed": 42,
+  "calibration_fraction": 0.5,
+  "probe_evaluation": {
+    "n_rows": 400,
+    "n_pair_ids": 313,
+    "high_stakes": 200,
+    "low_stakes": 200
+  },
+  "calibration_pool": {
+    "n_rows": 259,
+    "n_pair_ids": 196,
+    "high_stakes": 128,
+    "low_stakes": 131
+  },
+  "test_pool": {
+    "n_rows": 273,
+    "n_pair_ids": 197,
+    "high_stakes": 138,
+    "low_stakes": 135
+  },
+  "pair_overlap_counts": {
+    "probe_eval_calibration": 0,
+    "probe_eval_test": 0,
+    "calibration_test": 0
+  }
+}
